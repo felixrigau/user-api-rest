@@ -6,9 +6,7 @@ const keys = require('./config/keys')
 const users = require('./api/routers/users')
 
 // DB init
-const MONGO_URI = `mongodb+srv://${keys.db.user}:${keys.db.password}@users.ikncj.mongodb.net/${keys.db.name}?retryWrites=true&w=majority`;
-
-mongoose.connect(MONGO_URI, { useNewUrlParser: true })
+mongoose.connect(keys.db.uri, { useNewUrlParser: true })
 .then(res => console.log("Connected to DB"))
 .catch(err => console.log(err));
 
