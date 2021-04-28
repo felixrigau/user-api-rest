@@ -4,8 +4,8 @@
   "private": true,
   "description": "New Swagger API Project",
   "keywords": [],
-  "author": "",
-  "license": "",
+  "author": "felix.rigau",
+  "license": "MIT",
   "main": "app.js",
   "dependencies": {
     "dotenv": "^8.0.0",
@@ -15,9 +15,12 @@
     "request": "^2.88.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.11",
+    "nodemon": "^1.18.11"
   },
   "scripts": {
     "start": "nodemon app.js"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }

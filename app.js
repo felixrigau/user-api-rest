@@ -17,5 +17,5 @@ app.use(express.json())
 //User Router
 app.use('/api', users)
 
-const port = process.env.PORT || 10010;
+const port = process.env.PORT || 8088;
 app.listen(port);
